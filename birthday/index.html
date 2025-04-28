@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love! ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Initial Loading Screen -->
+    <div class="loading-screen">
+        <div class="heart-loader"></div>
+        <p>Loading your surprise...</p>
+    </div>
+
+    <div class="container">
+        <!-- Header Section with Surprise Button -->
+        <header>
+            <button id="surpriseBtn" class="surprise-btn" onclick="showBirthdayMessage()">
+                Click for a Surprise! 🎁
+            </button>
+            <div class="floating-hearts"></div>
+            <div id="arabicMessage" class="arabic-message"></div>
+        </header>
+
+        <!-- Memory Timeline -->
+        <section class="timeline-section">
+            <h2>Our Journey Together</h2>
+            <div class="timeline">
+                <!-- Add your actual dates and memories here -->
+                <div class="timeline-item">
+                    <div class="date">First Date</div>
+                    <div class="memory-card">
+                        <img src="https://example.com/placeholder1.jpg" alt="First Date" 
+                             data-caption="The day we first met - You were wearing that beautiful smile ❤️">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">First Kiss</div>
+                    <div class="memory-card">
+                        <img src="https://example.com/placeholder2.jpg" alt="Special Moment"
+                             data-caption="Our magical first kiss under the stars ✨">
+                    </div>
+                </div>
+                <!-- Add more timeline items as needed -->
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="gallery-section">
+            <h2>Our Beautiful Memories</h2>
+            <div class="photo-gallery" id="photoGallery">
+                <!-- Replace src with your actual photo URLs -->
+                <div class="photo-container">
+                    <img src="https://example.com/photo1.jpg" alt="Us together"
+                         data-caption="Remember this day at the beach? 🌊">
+                </div>
+                <div class="photo-container">
+                    <img src="https://example.com/photo2.jpg" alt="Special moment"
+                         data-caption="Our first vacation together 🌴">
+                </div>
+                <div class="photo-container">
+                    <img src="https://example.com/photo3.jpg" alt="Cute moment"
+                         data-caption="You looking gorgeous as always 💖">
+                </div>
+                <!-- Add more photos as needed -->
+            </div>
+        </section>
+
+        <!-- Interactive Love Letter -->
+        <section class="letter-section">
+            <h2>My Letter to You</h2>
+            <div class="letter-container">
+                <div class="letter-paper">
+                    <div class="typed-text" id="typedLetter"></div>
+                    <span class="decorative-heart heart-1">❤️</span>
+                    <span class="decorative-heart heart-2">❤️</span>
+                    <span class="decorative-heart heart-3">❤️</span>
+                    <span class="decorative-heart heart-4">❤️</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hidden Surprises -->
+        <div class="hidden-surprises">
+            <div class="surprise-box" id="surprise1">🎵 Our Song 🎵</div>
+            <div class="surprise-box" id="surprise2">📝 Secret Message</div>
+            <div class="surprise-box" id="surprise3">💝 Special Memory</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
